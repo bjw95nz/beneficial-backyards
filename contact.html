@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en-NZ">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Contact Beneficial Backyards — landscaping, digger work, gardening, and corten steel sculptures. Email info@beneficialbackyards.co.nz.">
+  <title>Contact | Beneficial Backyards</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="logo" href="index.html">
+        <svg class="logo-mark" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+          <rect width="32" height="32" rx="6" fill="#2d6a3e"/>
+          <path fill="#e8f2ea" d="M16 6c-1.5 4-5 6.5-8 7.5 3 .5 5.5 2.5 7 5.5 1.5-3 4-5 7-5.5C19 12.5 15.5 10 16 6z"/>
+          <path fill="#a8d4b0" d="M16 19v7"/>
+          <path fill="none" stroke="#a8d4b0" stroke-width="2" stroke-linecap="round" d="M16 26c-3-1-5-3-5-5"/>
+        </svg>
+        Beneficial Backyards
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+        <span class="nav-toggle-icon" aria-hidden="true"></span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="page-intro">
+      <div class="container">
+        <p class="section-label">Contact</p>
+        <h1>Get in touch</h1>
+        <p class="lead">
+          Form will send to
+          <a href="mailto:info@beneficialbackyards.co.nz">info@beneficialbackyards.co.nz</a>.
+        </p>
+      </div>
+    </div>
+
+    <section class="section section--alt">
+      <div class="container contact-layout">
+        <aside>
+          <h2>Direct contact</h2>
+          <p>
+            <strong>Email:</strong><br>
+            <a href="mailto:info@beneficialbackyards.co.nz">info@beneficialbackyards.co.nz</a>
+          </p>
+          <p>
+            <strong>Website:</strong><br>
+            <a href="https://beneficialbackyards.co.nz">beneficialbackyards.co.nz</a>
+          </p>
+          <p class="text-muted">
+            Enquiries welcome for residential landscaping, small digger work, gardening, and corten steel garden sculptures.
+          </p>
+        </aside>
+
+        <!--
+          v1: mailto for static hosting.
+          Later: swap action to a free form backend (e.g. Formspree) —
+          action="https://formspree.io/f/YOUR_FORM_ID" method="POST"
+          and keep name attributes as-is.
+        -->
+        <form
+          class="contact-form"
+          action="mailto:info@beneficialbackyards.co.nz"
+          method="post"
+          enctype="text/plain"
+          name="contact"
+        >
+          <div class="form-notice" role="status">
+            Form will send to <strong>info@beneficialbackyards.co.nz</strong>
+            (opens your email app). For hosted sites we can later wire a free form backend such as Formspree.
+          </div>
+
+          <div class="form-group">
+            <label for="name">Name <span class="required" aria-hidden="true">*</span></label>
+            <input id="name" name="name" type="text" autocomplete="name" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email <span class="required" aria-hidden="true">*</span></label>
+            <input id="email" name="email" type="email" autocomplete="email" required>
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone</label>
+            <input id="phone" name="phone" type="tel" autocomplete="tel">
+            <span class="hint">Optional</span>
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <select id="subject" name="subject">
+              <option value="">Please select…</option>
+              <option value="landscaping">Residential landscaping</option>
+              <option value="digger">Small digger work</option>
+              <option value="gardening">Gardening</option>
+              <option value="sculptures">Corten steel garden sculptures</option>
+              <option value="quote">Quote request</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message <span class="required" aria-hidden="true">*</span></label>
+            <textarea id="message" name="message" required placeholder="Tell us a little about your backyard or project…"></textarea>
+          </div>
+
+          <button class="btn btn-primary" type="submit">Send message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <p class="footer-brand">Beneficial Backyards</p>
+        <p class="footer-meta">
+          <a href="https://beneficialbackyards.co.nz">beneficialbackyards.co.nz</a><br>
+          <a href="mailto:info@beneficialbackyards.co.nz">info@beneficialbackyards.co.nz</a>
+        </p>
+      </div>
+      <nav aria-label="Footer">
+        <ul class="footer-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; Beneficial Backyards. Landscaping in New Zealand.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
